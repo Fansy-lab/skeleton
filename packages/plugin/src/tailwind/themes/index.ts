@@ -24,7 +24,7 @@ export type ObjectKeys<T> = keyof T;
 export type BaseTheme = {
 	name: string;
 	properties: ThemeProperties;
-	properties_dark: Partial<ThemeProperties>;
+	properties_dark?: Partial<ThemeProperties>;
 };
 
 export type PresetTheme = BaseTheme & {
